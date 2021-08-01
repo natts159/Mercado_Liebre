@@ -1,0 +1,15 @@
+footer section{
+    text-align: center;
+    margin: 45px 25px 0 25px;
+}
+
+footer section i{
+    color: var(--colorCeleste);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer p.ultima-p{
+    margin: 45px 20px 20px;
+
+}

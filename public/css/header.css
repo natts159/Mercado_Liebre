@@ -1,0 +1,56 @@
+header{
+    width: 100%;
+    height: 330px;
+    background-color: var(--colorAmarillo);
+    font-size:12px;
+}
+
+header img{
+    width: 50%;
+    padding: 23px 27px 13px;
+    display: block;
+}
+
+header .search{
+    margin-left: 20px;
+}
+
+header .search input{
+    width: 172px;
+}
+
+header .search i{
+    display: block;
+    border-radius: 14%;
+    width: 14px;
+    height: 15px;
+    margin-top: 2px;
+    border: solid 1px var(--colorGrisOscuro);
+    background-color:white;
+}
+
+header .pago{
+    margin: 10px 50px 15px;
+}
+
+header nav ul{
+    margin-bottom: 15px;
+}
+
+header nav ul li a{
+    color: black;
+    margin-right: 3px;
+}
+
+header div.burger-menu a{
+    width: 35px;
+    height: 37px;
+    padding: 8.5px;
+    background-color: var(--colorCeleste);
+    color: white;
+    display: block;
+    font-size: 17px;
+    margin: 0 auto 0;
+    text-align: center;
+    border-radius: 5px;
+}
