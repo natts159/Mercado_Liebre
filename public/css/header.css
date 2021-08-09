@@ -1,13 +1,12 @@
 /* mobile first*/
 
 header{
-    width: 375px;
-    height: 360px;
+    width: 100%;
     background-color: var(--colorAmarillo);
 }
 
 header img{
-    width: 50%;
+    width: 55%;
     padding: 23px 27px 13px;
     display: block;
 }
@@ -31,11 +30,19 @@ header .search i{
 }
 
 header .pago{
-    margin: 10px 50px 15px;
+    margin: 10px 44px 15px;
 }
 
 header nav ul{
     margin-bottom: 15px;
+}
+
+header nav ul li{
+    margin-bottom: -6.5px;
+}
+
+header nav ul li i{
+    font-size: 12px;
 }
 
 header nav ul li a{
@@ -44,14 +51,14 @@ header nav ul li a{
 }
 
 header div.burger-menu a{
-    width: 35px;
-    height: 37px;
+    width: 38px;
+    height: 39px;
     padding: 8.5px;
     background-color: var(--colorCeleste);
     color: white;
-    display: block;
-    font-size: 17px;
-    margin: 0 145px 0;
+    display: inline-block;
+    font-size: 19px;
+    margin: 5% 44% 7%;
     text-align: center;
     border-radius: 5px;
 }

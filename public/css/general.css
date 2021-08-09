@@ -13,7 +13,7 @@ body{
 
 main{
     margin: 0 auto;
-    width: 90% ;
+    width: max-content;
 }
 
 main section article.card div.card-content p.precio{
@@ -30,6 +30,7 @@ p, header nav ul li a{
 
 h4{
     font-size: 16px;
+    color: var(--colorGrisOscuro);
 }
 
 a{

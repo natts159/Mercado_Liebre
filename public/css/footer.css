@@ -1,6 +1,16 @@
+footer{
+    background-color: white;
+    border-right: 8px solid var(--colorGrisClaro);
+    border-left: 8px solid var(--colorGrisClaro);
+}
+
+footer p{
+    color: var(--colorGrisOscuro);
+}
+
 footer section{
     text-align: center;
-    margin: 45px 25px 0 25px;
+    padding: 56px 37px 0;
 }
 
 footer section i{
