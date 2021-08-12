@@ -11,19 +11,6 @@ body{
     background-color: var(--colorGrisClaro);
 }
 
-main{
-    margin: 0 auto;
-    width: max-content;
-}
-
-main section article.card div.card-content p.precio{
-    font-size: 18px;
-}
-
-main section article.card div.card-content p.descuento{
-    font-size: 16px;
-}
-
 p, header nav ul li a{
     font-size: 12px;
 }
@@ -35,6 +22,7 @@ h4{
 
 a{
     text-decoration: none;
+    color: black;
 }
 
 li{

@@ -1,28 +1,84 @@
+/*banner*/
 .home main .banner{
-    display: none;
+    display: block;
 }
 
+.home main{
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+/* basado en tu ultima visita */
 .home main h3{
     font-size:24px;
     margin: 20px 0;
     color: var(--colorGrisOscuro);
 }
 
-.home main section article.card img{
-    width:300px;
-    height: 300px;
-}
 
+/* productos */
 .home main section article.card{
     margin-bottom: 10px;
     background-color: white;
 }
 
+
+/* contenedor de detalle */
 .home main section article div.card-content{
     border-top: solid 1px var(--colorGrisClaro);
-    padding: 7px 0 15px 14px;
+    padding: 15px;
+}
+ 
+
+.home .card .card-content .icono-camion{
+    color: var(--colorVerde);
+    border: 1px solid var(--colorVerde);
+    border-radius: 50%;
+    padding: 16px;
+    width: fit-content;
+    position: relative;
 }
 
-.home main div h4{
+.home .card .card-content .icono-camion i{
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    font-size: 13px;
+}
+
+/* precio y descuento*/
+.home main section article.card div.card-content p.precio{
+    font-size: 18px;
+}
+
+.home main section article.card div.card-content p.descuento{
     font-size: 16px;
+    color: var(--colorVerde);
+
+}
+
+
+/*nombre del producto*/
+.home main section .card-content h4 {
+    font-size: 16px;
+    display: none;
+}
+
+
+/*tablet*/
+@media(min-width:361px){
+    .home main section .card-content h4 {
+        font-size: 16px;
+        display: block;
+    }
+
+    .home main section article.card{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100 );
+    }
+}
+
+/* desktop*/
+@media(min-width:769px){
+
 }
