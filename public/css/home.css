@@ -1,19 +1,21 @@
-/*banner*/
-.home main .banner{
-    display: block;
-}
-
 .home main{
     margin: 0 auto;
     width: 90%;
 }
 
+.home main section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 
 /* basado en tu ultima visita */
-.home main h3{
+.home main section h3{
     font-size:24px;
-    margin: 20px 0;
+    margin: 20px 0 ;
     color: var(--colorGrisOscuro);
+    width: 100%;
 }
 
 
@@ -28,34 +30,52 @@
 .home main section article div.card-content{
     border-top: solid 1px var(--colorGrisClaro);
     padding: 15px;
+    position: relative;
 }
  
-
+/*icono del camion*/
 .home .card .card-content .icono-camion{
     color: var(--colorVerde);
     border: 1px solid var(--colorVerde);
     border-radius: 50%;
-    padding: 16px;
-    width: fit-content;
-    position: relative;
+    padding: 5px;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
-
+  
+/*
 .home .card .card-content .icono-camion i{
     position: absolute;
     top: 4px;
     left: 3px;
     font-size: 13px;
+}*/
+
+
+/* precio-descuento*/
+.home section article .card-content .precio-descuento{
+    display: flex;
+
 }
 
-/* precio y descuento*/
+/* precio*/
 .home main section article.card div.card-content p.precio{
     font-size: 18px;
+    flex-grow: 0.3;
 }
 
+
+/* descuento*/
 .home main section article.card div.card-content p.descuento{
     font-size: 16px;
     color: var(--colorVerde);
-
+    flex-grow: 0.7;
 }
 
 
@@ -68,17 +88,34 @@
 
 /*tablet*/
 @media(min-width:361px){
+    .home main section article.card{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100 );
+        width: 42%;
+    }
+
+    .home main section h3{
+        margin: 15px 29px 30px;
+    }
+
     .home main section .card-content h4 {
         font-size: 16px;
         display: block;
     }
 
-    .home main section article.card{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100 );
-    }
 }
 
 /* desktop*/
 @media(min-width:769px){
+    .home main section{
+        justify-content: space-between;
+    }
 
+    .home main section h3{
+        margin: 15px 0px 30px;
+    }
+
+    .home main section article.card{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100 );
+        width: 21%;
+    }
 }
