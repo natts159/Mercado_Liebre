@@ -37,3 +37,9 @@ li{
     --colorGrisClaro: #ebebeb;
     --colorVerde: #39b54a;
 }
+
+
+
+button:hover{
+    cursor: pointer;
+}

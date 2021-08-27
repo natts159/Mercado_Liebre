@@ -23,23 +23,29 @@ header .logo-search .logo{
 /* barra de busqueda e icono de lupa */
 header .logo-search .search{
     width: 48%;
-    position: relative;
 }
 
+header .logo-search .search form{
+    display: flex;
+    width: 100%;
+} 
+
 header .logo-search .search input{
-    width: 106%;
     border: none;
-    border-radius: 3.5px;
-    height: 30px;
+    border-radius: 5px 0 0 5px;
+    padding: 10px;
+    flex-grow: 1;
+    width: 100%;
 }
 
 header .logo-search .search button{
     background-color: white;
-    border: 1px solid white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 5px;
     color: var(--colorGrisOscuro);
-    position: absolute;
-    top: 6px;
-    right: -8px;
+    display: flex;
+    align-items: center;
 }
  
 
@@ -89,7 +95,6 @@ header div.burger-menu{
     }
     header .logo-search .search{
         width: 33%;
-        position: unset;
     }
     header .pago{
         width: 33%;
@@ -97,19 +102,16 @@ header div.burger-menu{
     }
      
     /*barra de busqueda*/
+
+    header .logo-search .search form{
+        width: 94%;
+    } 
+    
     header .logo-search .search input{
-        width: 74%;
         margin-left: 6%;
-        border: 0.5px solid var(--colorGrisOscuro) ;
-        border-radius: 0;
-        height: auto;
+        border-radius: 6px 0 0 6px;
     }
 
-    header .logo-search .search button{
-        border: 0.5px solid var(--colorGrisOscuro);
-        color: black;
-        position: unset;
-    }
 
 /*barra de navegacion*/
     header nav{
@@ -153,16 +155,6 @@ header div.burger-menu{
         margin-left: 9px;
     }
 
-    /*barra de busqueda*/
-    header .logo-search .search input{
-        width: 58%;
-        margin-left: 3%;
-        height: 22px;
-    }
-
-    header .logo-search .search button{
-        height: 22px;
-    }
      
     header .logo-search .pago p{
         width: 264px;

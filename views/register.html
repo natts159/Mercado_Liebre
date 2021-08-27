@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <script src="https://kit.fontawesome.com/416fd3670f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="register-login">
+    <header>
+        <div class="logo-search">
+            <div class="logo">
+                <a href="/"><img src="/img/logo-mercado-liebre.svg" alt="logo"></a>
+            </div>
+
+            <div class="search">
+                <form action="">
+                    <input type="text" placeholder=" Buscar productos, marcas">
+                    <button><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="pago">
+                <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Ofertas</a></li>
+                <li><a href="">Tiendas Oficiales</a></li>
+                <li><a href="">Vender</a></li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+            <ul>
+                <li><a href="/register">Creá tu cuenta<i class="far fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="">Mis compras<i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <h1>Registrate</h1>
+            <form action="">
+                <!-- nombre completo -->
+                <div class="contenedor-input">
+                    <label class="label-titulo" for="nombreCompleto">Nombre completo:</label>
+                    <input class="input-largo" type="text" placeholder="Ingresa nombre y apellido" name="nombreCompleto">
+                </div>
+
+                <!-- nombre de usuario -->
+                <div class="contenedor-input">
+                    <label class="label-titulo" for="userName">Nombre de usuario:</label>
+                    <input class="input-largo" type="text" placeholder="Elegí un nombre de usuari@" name="userName">
+                </div>
+
+                <!-- email -->
+                <div class="contenedor-input">
+                    <label class="label-titulo" for="email">Email:</label>
+                    <input class="input-largo" type="email" placeholder="Escribir email" name="email">
+                </div>
+
+                <!-- fecha de nacimiento -->
+                <div class="contenedor-input">
+                    <label class="label-titulo" for="date">Fecha de nacimiento:</label>
+                    <input class="input-largo" type="date" id="date" name="date">
+                </div>
+
+                <!-- domicilio -->
+                <div class="contenedor-input">
+                    <label class="label-titulo" for="domicilio">Domicilio:</label>
+                    <input class="input-largo" type="text" name="domicilio" id="domicilio" placeholder="Dirección completa">
+                </div>
+
+                <!-- perfil de usuario -->
+                <h4 class="item-form">Perfil de usuario:</h4>
+                <div class="contenedor-input">
+                    <input class="radio" type="radio" name="perfil" value="comprador" id="radio">
+                    <label for="comprador">Comprador</label>
+
+                    <input class="radio" type="radio" name="perfil" value="vendedor" id="radio">
+                    <label for="vendedor">Vendedor</label>
+                </div>
+
+                <!-- categoría de intereses -->
+                <h4 class="item-form">Intereses:</h4>
+                <div class="contenedor-input">
+                    <input class="check" type="checkbox" name="intereses" value="electro" id="electro">
+                    <label for="electro">Electro</label>
+                </div>
+
+                <div class="contenedor-input">
+                    <input class="check" type="checkbox" name="intereses" value="moda" id="moda">
+                    <label for="moda">Moda</label>
+                </div>
+
+                <div class="contenedor-input">
+                    <input class="check" type="checkbox" name="intereses" value="hogar" id="hogar">
+                    <label for="hogar">Hogar</label>
+                </div>
+
+                <div class="contenedor-input">
+                    <input class="check" type="checkbox" name="intereses" value="jugueteria" id="jugueteria">
+                    <label for="jugueteria">Juguetería</label>
+                </div>
+
+                <div class="contenedor-input">
+                    <input class="check" type="checkbox" name="intereses" value="vida-sana" id="vida-sana">
+                    <label for="vida-sana">Vida sana</label>
+                </div>
+
+
+
+                <!-- foto de perfil -->
+                <div class="contenedor-input">
+                    <label class="label-titulo" for="img-perfil">Foto de perfil:</label>
+                    <input type="file" name="img-perfil" id="img-perfil">
+                </div>
+
+                <!-- contraseña -->
+                <div class="contenedor-input">
+                    <label class="label-titulo" for="pass">Contraseña:</label>
+                    <input class="input-largo" type="password" name="pass" placeholder="Escribir contraseña" minlength="8" id="pass" >
+                </div>
+
+                <!-- confirmar contraseña -->
+                <div class="contenedor-input">
+                    <label class="label-titulo" for="repeat-pass">Confirmar contraseña:</label>
+                    <input class="input-largo" type="password" name="repeat-pass" placeholder="Repetir contraseña" id="repeat-pass">
+                </div>
+
+
+                <!-- botones -->
+                <div class="conteiner-btn">
+                    <button class="btn" type="submit">Registrarse</button>
+                    <button class="btn" type="reset">Resetear</button>
+                </div>
+
+
+            </form>
+        </div>
+
+
+    </main>
+    <footer>
+        <section><i class="fas fa-credit-card"></i>
+            <h4>Pagá con tarjeta o en efectivo</h4>
+            <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es
+                seguro!</p>
+        </section>
+        <section><i class="fas fa-gift"></i>
+            <h4>Envío gratis desde $2.500</h4>
+            <p>Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de productos. Es un beneficio de
+                MercadoPuntos.</p>
+        </section>
+        <section><i class="fas fa-user-shield"></i>
+            <h4>Seguridad de principio a fin</h4>
+            <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estás siempre
+                protegid@.</p>
+        </section>
+        <p class="ultima-p">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+    </footer>
+</body>
+
+</html>
