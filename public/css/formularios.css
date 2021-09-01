@@ -12,6 +12,13 @@
     flex-wrap: wrap;
 }
 
+ /*contenedor de perfil usuario*/
+ .register-login .contenedor .contenedor-perfil{
+    display: flex;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
 /*titulo general*/
 .register-login .contenedor h1{
     text-align: center;
@@ -38,7 +45,7 @@
 
 
 /*inputs radio y check*/
-.register-login .contenedor .contenedor-input .radio{
+.register-login .contenedor .contenedor-perfil .radio{
     margin: 0 20px;
 }
 
@@ -65,4 +72,13 @@
 .register-login .contenedor .conteiner-btn .btn{
     background-color: var(--colorCeleste);
     color:white;
+}
+
+@media (min-width:768px){
+    /*contenedor input*/
+.register-login .contenedor .contenedor-perfil{
+    display: inline-flex;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
 }
