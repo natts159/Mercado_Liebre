@@ -4,11 +4,7 @@ footer{
     border-left: 8px solid var(--colorGrisClaro);
 }
 
-footer p{
-    color: var(--colorGrisOscuro);
-}
-
-footer section{
+footer .box-footer section{
     text-align: center;
     padding: 56px 37px 0;
 }
@@ -17,9 +13,31 @@ footer section i{
     color: var(--colorCeleste);
     font-size: 2em;
     margin-bottom: 10px;
+    transition: color ease 0.4s;
+}
+
+footer section i:hover{
+    color: var(--colorAzulClaro);
+}
+
+footer p{
+    color: var(--colorGrisOscuro);
 }
 
 
 footer p.ultima-p{
     margin: 45px 20px 20px;
+}
+
+@media (min-width:1024px){
+    footer .box-footer{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    footer .box-footer section{
+        width: 33%;
+        padding: 56px 5px 0;
+        margin-bottom: 20px;
+    }
 }

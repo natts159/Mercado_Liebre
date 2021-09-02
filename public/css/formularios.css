@@ -45,10 +45,7 @@
 
 
 /*inputs radio y check*/
-.register-login .contenedor .contenedor-perfil .radio{
-    margin: 0 20px;
-}
-
+.register-login .contenedor .contenedor-perfil .radio,
 .register-login .contenedor .contenedor-input .check{
     margin: 0 12px;
 }
@@ -72,13 +69,24 @@
 .register-login .contenedor .conteiner-btn .btn{
     background-color: var(--colorCeleste);
     color:white;
+    transition: background-color linear 0.3s;
+}
+
+
+.register-login .contenedor .conteiner-btn .btn:hover{
+    background-color: var(--colorAzulClaro);
 }
 
 @media (min-width:768px){
     /*contenedor input*/
-.register-login .contenedor .contenedor-perfil{
-    display: inline-flex;
-    margin: 20px 0;
-    flex-wrap: wrap;
-}
+    .register-login .contenedor .contenedor-perfil{
+        display: inline-flex;
+        margin: 20px 0;
+        flex-wrap: wrap;
+    }
+
+
+    .register-login .contenedor .contenedor-perfil .radio{
+        margin: 0 20px;
+    }
 }

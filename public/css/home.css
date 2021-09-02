@@ -23,6 +23,12 @@
 .home main section article.card{
     margin-bottom: 10px;
     background-color: white;
+    transition: all ease 0.3s;
+}
+
+.home main section article:hover.card{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100 );
+
 }
 
 
@@ -47,16 +53,14 @@
     position: absolute;
     right: 20px;
     top: -15px;
+    transition: all ease 0.3s;
+}
+
+.home .card:hover .card-content .icono-camion{
+    box-shadow: 0 0 5px var(--colorVerde);
+    transform: rotate(360deg);
 }
   
-/*
-.home .card .card-content .icono-camion i{
-    position: absolute;
-    top: 4px;
-    left: 3px;
-    font-size: 13px;
-}*/
-
 
 /* precio-descuento*/
 .home section article .card-content .precio-descuento{
@@ -80,16 +84,22 @@
 
 
 /*nombre del producto*/
-.home main section .card-content h4 {
+.home main section article .card-content h4 {
     font-size: 16px;
-    display: none;
+    height: 0;
+    transition: all ease 0.3s;
+    overflow: hidden;
+}
+
+.home main section article:hover .card-content h4{
+    height: 16px;
+    margin-top: 10px;
 }
 
 
 /*tablet*/
 @media(min-width:361px){
     .home main section article.card{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100 );
         width: 42%;
     }
 
@@ -97,7 +107,7 @@
         margin: 15px 29px 30px;
     }
 
-    .home main section .card-content h4 {
+    .home main section article .card-content h4 {
         font-size: 16px;
         display: block;
     }
@@ -115,7 +125,6 @@
     }
 
     .home main section article.card{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100 );
         width: 21%;
     }
 }
